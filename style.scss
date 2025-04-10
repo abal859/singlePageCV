@@ -22,24 +22,6 @@ body{
             transition: width 0.3s ease, box-shadow 0.3s ease;
             color: rgb(0, 0, 60);
             position: relative;
-
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: 30%;
-                left: 4%;
-                width: 0%;
-                height: 3px;
-                background-color: rgb(0, 0, 60);
-                transition: width 0.2s ease-in-out;
-                border-radius: 3rem;
-            }
-            &.collapsed:hover::after {
-                width: 35%;
-            }
-            &.collapsed .infoList.show::after {
-                width: 0%;
-            }
             
 
             nav{

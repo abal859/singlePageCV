@@ -21,23 +21,6 @@ body main section {
   color: rgb(0, 0, 60);
   position: relative;
 }
-body main section::after {
-  content: "";
-  position: absolute;
-  bottom: 30%;
-  left: 4%;
-  width: 0%;
-  height: 3px;
-  background-color: rgb(0, 0, 60);
-  transition: width 0.2s ease-in-out;
-  border-radius: 3rem;
-}
-body main section.collapsed:hover::after {
-  width: 35%;
-}
-body main section.collapsed .infoList.show::after {
-  width: 0%;
-}
 body main section nav {
   display: flex;
   justify-content: space-between;
