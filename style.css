@@ -15,7 +15,7 @@ body main section {
   box-shadow: 0 0 10px gray;
   border-radius: 2em;
   background-color: white;
-  padding: 2em;
+  padding: 1.5em;
   margin: 1em;
   transition: width 0.3s ease, box-shadow 0.3s ease;
   color: rgb(0, 0, 60);
@@ -59,24 +59,25 @@ body main .info ul {
 body main .info ul li {
   display: flex;
   align-items: center;
-  padding: 0.7rem;
+  padding: 1%;
   font-size: 1rem;
   font-weight: bold;
 }
 body main .info ul li span {
-  width: 4%;
+  width: 8%;
 }
 body main .info ul li a {
   text-decoration: none;
   color: rgb(0, 0, 60);
 }
 body main .links {
-  width: 10%;
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+}
+body main .links .linkedin {
+  padding-right: 5%;
 }
 
 @media (min-width: 768px) {
