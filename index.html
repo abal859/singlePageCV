@@ -18,50 +18,82 @@
     <!-- Favicon -->
     <link rel="icon" href="faviconAB.ico" type="image/x-icon">
 
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+
     <!-- Title -->
     <title>Antoni Balcerzak - CV</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Antoni Balcerzak</h1>
-    </header>
     <main>
-        <div class="break"></div>
+        <section class="name">
+            <h1>Antoni Balcerzak</h1>
+            <div class="break"></div>
+        </section>
         <section class="info">
-            <h3>Computer Science Student</h3>
-            <p>Gdańsk, Poland</p>
-            <p>23 Sep 2006</p>
-            <p><a href="mailto:antekbal06@gmail.com">antekbal06@gmail.com</a></p>
+            <nav>
+                <h3>Personal data</h3>
+                <i class="fa-solid fa-plus toggleBtn"></i>
+            </nav>
+            <ul class="infoList">
+                <li><i class="fa-solid fa-square-binary"></i><span></span>Computer Science Student</li>
+                <li><i class="fa-solid fa-location-dot"></i><span></span>Gdańsk, Poland</li>
+                <li><i class="fa-solid fa-cake-candles"></i><span></span>23 Sep 2006</li>
+                <li><a href="mailto:antekbal06@gmail.com"><i class="fa-solid fa-envelope"></i></a><span></span><a href="mailto:antekbal06@gmail.com">antekbal06@gmail.com</a></li>
+            </ul> 
         </section>
         <div class="break"></div>
         <section class="skills">
-            <h3>Skills</h3>
-            <p>Python, Scala, HTML, CSS, SCSS, JavaScript, Node.js, SQL, Analytical Thinking</p>
+            <nav>
+                <h3>Skills</h3>
+                <i class="fa-solid fa-plus toggleBtn"></i>
+            </nav>
+            <div class="infoList">
+                <p>Python, Scala, HTML, CSS, SCSS, JavaScript, Node.js, SQL, Analytical Thinking</p>
+            </div>
         </section>
         <div class="break"></div>
         <section class="edu">
-            <h3>Educational Background</h3>
-            <h4>University of Gdańsk - Bachelor's Degree</h4>
-            <p>Oct 2024 - 2027</p>
+            <nav>
+                <h3>Educational Background</h3>
+                <i class="fa-solid fa-plus toggleBtn"></i>
+            </nav>
+            <div class="infoList">
+                <h4>University of Gdańsk - Bachelor's Degree</h4>
+                <p>Oct 2024 - 2027</p>
+            </div>
         </section>
         <div class="break"></div>
         <section class="experience">
-            <h3>Experience</h3>
-            <h4>Wolt, Gdańsk - Delivery Courier</h4>
-            <p>Feb 2024 - present</p>
-            <ul>
-                <li>Time management</li>
-                <li>Customer contact</li>
-            </ul>
+            <nav>
+                <h3>Experience</h3>
+                <i class="fa-solid fa-plus toggleBtn"></i>
+            </nav>
+            <div class="infoList">
+                <h4>Wolt, Gdańsk - Delivery Courier</h4>
+                <p>Feb 2024 - present</p>
+                <ul>
+                    <li>Time management</li>
+                    <li>Customer contact</li>
+                </ul>
+            </div>    
         </section>
         <div class="break"></div>
         <section class="social-media">
-            <h3>Across the internet</h3>
-            <ul class="links">
-                <li class="linkedin"><a href="https://www.linkedin.com/in/antoni-balcerzak-899000329/">LinkedIn</a></li>
-                <li class="github"><a href="https://github.com/abal859">GitHub</a></li>
-            </ul>
+            <nav>
+                <h3>Across the internet</h3>
+                <i class="fa-solid fa-plus toggleBtn"></i>
+            </nav>
+            <div class="infoList">
+                <ul class="links">
+                    <li class="linkedin"><a href="https://www.linkedin.com/in/antoni-balcerzak-899000329/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li class="github"><a href="https://github.com/abal859"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
