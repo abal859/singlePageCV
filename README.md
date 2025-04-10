@@ -1,4 +1,5 @@
 # Antoni Balcerzak - CV
+The project is inspired by a task from roadmap.sh website: https://roadmap.sh/projects/single-page-cv
 
 This is my personal CV in the form of a website. The project is intended to showcase my skills, educational background and experience.
 
