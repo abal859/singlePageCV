@@ -2,20 +2,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleButtons = document.querySelectorAll('.toggleBtn');
 
     toggleButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const section = btn.closest('section');
-            const infoList = section.querySelector('.infoList');
+        const section = btn.closest('section');
+        const infoList = section.querySelector('.infoList');
 
-            
+        if (!infoList.classList.contains('show')) {
+            section.classList.add('collapsed');
+        }
+
+        btn.addEventListener('click', () => {
             infoList.classList.toggle('show');
             btn.classList.toggle('rotate');
-            section.classList.toggle('collapsed')
-
-            if (!section.classList.contains('collapsed')) {
-                setTimeout(() => {
-                    section.classList.remove('collapsed');
-                }, 300);
-            }
+            section.classList.toggle('collapsed', !infoList.classList.contains('show'));
         });
     });
 });

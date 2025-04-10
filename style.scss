@@ -34,13 +34,13 @@ body{
                 transition: width 0.2s ease-in-out;
                 border-radius: 3rem;
             }
-        
-            &:hover::after {
+            &.collapsed:hover::after {
                 width: 35%;
             }
-            &.collapsed::after {
+            &.collapsed .infoList.show::after {
                 width: 0%;
             }
+            
 
             nav{
                 display: flex;
