@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 255, 243);
+}
+body main {
+  padding: 2em;
+  margin: 2em;
+}
+body main section {
+  box-shadow: 0 0 10px gray;
+  border-radius: 2em;
+  background-color: white;
+  padding: 2em;
+  margin: 1em;
+  transition: width 0.3s ease, box-shadow 0.3s ease;
+  color: rgb(0, 0, 60);
+  position: relative;
+}
+body main section::after {
+  content: "";
+  position: absolute;
+  bottom: 30%;
+  left: 4%;
+  width: 0%;
+  height: 3px;
+  background-color: rgb(0, 0, 60);
+  transition: width 0.2s ease-in-out;
+  border-radius: 3rem;
+}
+body main section.collapsed:hover::after {
+  width: 35%;
+}
+body main section.collapsed .infoList.show::after {
+  width: 0%;
+}
+body main section nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main section nav .toggleBtn {
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  font-size: 1.4rem;
+  color: #333;
+}
+body main section nav .toggleBtn.rotate {
+  transform: rotate(405deg);
+}
+body main section .infoList {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: max-height 0.5s ease;
+}
+body main section .infoList.show {
+  max-height: 500px;
+}
+body main section i {
+  color: rgb(0, 0, 60);
+  font-size: 1.5rem;
+  width: 1rem;
+  height: 2rem;
+}
+body main section:hover {
+  justify-self: center;
+  width: 90%;
+  box-shadow: 0 0 15px rgba(0, 0, 60, 0.595);
+  cursor: grab;
+}
+body main section:hover section {
+  position: static;
+}
+body main .info ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+body main .info ul li {
+  display: flex;
+  align-items: center;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+body main .info ul li span {
+  width: 4%;
+}
+body main .info ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 60);
+}
+body main .links {
+  width: 10%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
